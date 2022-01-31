@@ -1,0 +1,105 @@
+[data-template-suffix="features-and-benefits"] {
+  /* Accordion styles */
+}
+
+[data-template-suffix="features-and-benefits"] input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab {
+  width: 100%;
+  overflow: hidden;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  /* Icon */
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-label:hover {
+  background: #FAFBFB;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-label::before {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-label p {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #000;
+  background: white;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-content p {
+  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #FFF;
+  cursor: pointer;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion-tab-close:hover {
+  background: #FAFBFB;
+}
+
+[data-template-suffix="features-and-benefits"] input:checked + .accordion-tab-label {
+  background: #FAFBFB;
+}
+
+[data-template-suffix="features-and-benefits"] input:checked + .accordion-tab-label::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-top: 3px;
+}
+
+[data-template-suffix="features-and-benefits"] input:checked ~ .accordion-tab-content {
+  max-height: 100vh;
+  padding: 0 1em;
+}
+
+[data-template-suffix="features-and-benefits"] .title {
+  color: var(--shopify-editor-setting-heading_color);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.125;
+  word-break: break-word;
+}
+/*# sourceMappingURL=accordion.css.map */

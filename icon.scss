@@ -1,0 +1,44 @@
+/* # Icon
+================================================== */
+
+[data-template-suffix="features-and-benefits"] {
+    .icon {
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        height: 1.2rem;
+        width: 1.2rem;
+        fill: currentColor;
+    }
+
+    .is-large .icon {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    .is-medium .icon {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .is-small .icon {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .icon svg {
+        height: 100%;
+        width: 100%;
+    }
+}

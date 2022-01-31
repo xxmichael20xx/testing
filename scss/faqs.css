@@ -1,0 +1,136 @@
+/* #FAQ
+================================================== */
+[data-template-suffix="features-and-benefits"] .page-faq__column-wrap {
+  width: 100%;
+}
+
+@media only screen and (max-width: 798px) {
+  [data-template-suffix="features-and-benefits"] .column-wrapper .faq:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+[data-template-suffix="features-and-benefits"] .column-wrapper .faq-accordion {
+  width: 100%;
+}
+
+[data-template-suffix="features-and-benefits"] .column-wrapper .faq-accordion .image-element__wrap {
+  padding: 0;
+}
+
+[data-template-suffix="features-and-benefits"] .column-wrapper .faq-accordion .image-element__wrap:first-child {
+  margin-bottom: 20px;
+}
+
+[data-template-suffix="features-and-benefits"] .column-wrapper .faq-title {
+  margin-bottom: 10px;
+}
+
+[data-template-suffix="features-and-benefits"] .column-wrapper .faq-title:not(:first-child) {
+  margin-top: 40px;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt a,
+[data-template-suffix="features-and-benefits"] .accordion dt button,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt a,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt button {
+  background: none;
+  border: 0;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  padding: 20px 20px 20px 40px;
+  text-align: left;
+  width: 100%;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt .accordion [aria-expanded="true"] small,
+[data-template-suffix="features-and-benefits"] .accordion dt .accordion-style--carets[aria-expanded="true"] .icon,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt .accordion [aria-expanded="true"] small,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt .accordion-style--carets[aria-expanded="true"] .icon {
+  -webkit-transform: translateY(-60%) rotate(180deg);
+          transform: translateY(-60%) rotate(180deg);
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt small,
+[data-template-suffix="features-and-benefits"] .accordion dt .icon,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt small,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt .accordion-style--plus_and_minus .icon,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt .accordion-style--plus_and_minus .icon {
+  display: none;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt .accordion-style--plus_and_minus .icon.icon--active,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt .accordion-style--plus_and_minus .icon.icon--active {
+  display: block;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt a[aria-expanded="true"],
+[data-template-suffix="features-and-benefits"] .accordion dt a:hover,
+[data-template-suffix="features-and-benefits"] .faq-accordion dt button[aria-expanded="true"],
+[data-template-suffix="features-and-benefits"] .faq-accordion dt button:hover {
+  background-color: rgba(87, 117, 141, 0.03);
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dd,
+[data-template-suffix="features-and-benefits"] .faq-accordion dd {
+  display: none;
+  padding: 20px 20px 20px 40px;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt:first-of-type small,
+[data-template-suffix="features-and-benefits"] .accordion dt:first-of-type [aria-expanded="true"] small {
+  -webkit-transform: translateY(-60%) rotate(270deg);
+          transform: translateY(-60%) rotate(270deg);
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt:first-of-type [aria-expanded="false"] small {
+  -webkit-transform: translateY(-60%) rotate(360deg);
+          transform: translateY(-60%) rotate(360deg);
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dd {
+  margin-left: 0;
+  display: none;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dt a small.right {
+  font-family: "Arial";
+  /* Force font family to ensure accordion carets are displayed on iOS devices */
+}
+
+[data-template-suffix="features-and-benefits"] .accordion dd:first-of-type {
+  display: block;
+}
+
+[data-template-suffix="features-and-benefits"] .accordion [aria-expanded="false"] small {
+  -webkit-transform: translateY(-60%) rotate(180deg);
+          transform: translateY(-60%) rotate(180deg);
+}
+
+[data-template-suffix="features-and-benefits"] .accordion [aria-expanded="true"] small {
+  -webkit-transform: translateY(-60%) rotate(270deg);
+          transform: translateY(-60%) rotate(270deg);
+}
+/*# sourceMappingURL=faqs.css.map */
